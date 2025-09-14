@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Birthday Game - Page 1</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffd6ec, #d6f5ff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 500px;
+    }
+    input {
+      padding: 10px;
+      margin-top: 10px;
+      width: 80%;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff85b3;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff6097;
+    }
+    .hint {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>🧩 Level 1</h2>
+    <p><strong>Namma 1st meet panna place enga??</strong></p>
+    <p class="hint">(Hints - School, Bustand, College)</p>
+    <input type="text" id="answer" placeholder="Type your answer..." />
+    <br />
+    <button onclick="checkAnswer()">Submit</button>
+    <p id="error" class="error">❌ Wrong answer! Try again 😊</p>
+  </div>
+
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById('answer').value.trim().toLowerCase();
+      const correct = 'college';
+
+      if (input === correct.toLowerCase()) {
+        window.location.href = 'page2.html'; // Link to Page 2 (to be created next)
+      } else {
+        document.getElementById('error').style.display = 'block';
+      }
+    }
+  </script>
+
+</body>
+</html>
