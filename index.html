@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎂 Birthday Puzzle Game - Intro</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #ffe0ec, #d0f0ff);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 32px;
+      color: #ff3399;
+    }
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      background-color: #ff66b2;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #ff3385;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎉 Welcome to Your Birthday Journey 🎉</h1>
+    <p>This isn't just any birthday wish — it's a puzzle game through our memories 💖</p>
+    <p>Solve each question, unlock the next page, and reach your final surprise! 🎁</p>
+    <button onclick="startGame()">Start Journey 🚀</button>
+  </div>
+
+  <script>
+    function startGame() {
+      window.location.href = "page1.html"; // This takes you to Page 1
+    }
+  </script>
+
+</body>
+</html>
